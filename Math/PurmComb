@@ -1,0 +1,17 @@
+1. Permutations of n items = n!
+
+====================================
+2. Permutations of n items where 
+	n1 num of itmes are of a type/same
+	n2 num of items are of another type/same
+	...
+	nk num of items are of another type/same
+so purm = (n!) / (n1! * n2! * n3! * ... * nk!)
+
+====================================
+3. we have n distinct items in a bucket. how many different SEQUENCE of ways we can pick r items from that bucket - 
+P(n,r) = n! / (n - r)!
+
+====================================
+4. we have n distinct items in a bucket. how many different ways (SEQUENCE doesn't matter) we can pick r items from that bucket - 
+C(n,r) = n! / { (n - r)! * r!}

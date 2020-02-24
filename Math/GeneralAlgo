@@ -1,0 +1,63 @@
+GeneralAlgo
+
+https://www.geeksforgeeks.org/fundamentals-of-algorithms/
+
+1. Heap, (memorize heap algo in JS)
+2. AVL tree
+3. quick sort
+4. merge sort
+5. bubble sort
+6. insertion sort
+7. Heap sort
+
+maybe-
+1. Red-black tree
+
+
+Graph-
+2. set union
+1. minimum spanning tree
+3. dijkstra
+4. All pair shortest path, flowed warshell
+
+maybe- 
+1. A* search
+2. 
+
+
+Math- 
+1. find list of prime numbers
+2. find gcd lcm of two numbers
+
+Greedy Algorithms:
+
+Activity Selection Problem
+Kruskal’s Minimum Spanning Tree Algorithm
+Huffman Coding
+Efficient Huffman Coding for Sorted Input
+Prim’s Minimum Spanning Tree Algorithm
+Prim’s MST for Adjacency List Representation
+Dijkstra’s Shortest Path Algorithm
+Dijkstra’s Algorithm for Adjacency List Representation
+Job Sequencing Problem
+Quiz on Greedy Algorithms
+Greedy Algorithm to find Minimum number of Coins
+K Centers Problem
+Minimum Number of Platforms Required for a Railway/Bus Station
+
+
+
+Dynamic Programming:
+
+
+
+Geometric Algorithms:
+
+Closest Pair of Points | O(nlogn) Implementation
+How to check if two given line segments intersect?
+How to check if a given point lies inside or outside a polygon?
+Convex Hull | Set 1 (Jarvis’s Algorithm or Wrapping)
+Convex Hull | Set 2 (Graham Scan)
+Given n line segments, find if any two segments intersect
+Check whether a given point lies inside a triangle or not
+How to check if given four points form a square
