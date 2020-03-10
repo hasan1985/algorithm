@@ -1,0 +1,14 @@
+sive's prime factor algorithm
+2 4 6 8 10 12 14 16 18 20
+3 6 9 12 15 18 - prime
+4 (not a prime) 8 12 16 20
+5 10 15 20 - prime
+6 - filled with 2 or 3
+7 - prime
+8 - filled with 2
+9 - prime
+10 - filled with 2 or 5
+11 - prime
+12 - filled with 2, 3
+13 - prime
+14 
