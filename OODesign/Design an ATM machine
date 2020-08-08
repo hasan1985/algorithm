@@ -1,0 +1,82 @@
+Design an ATM machine
+
+Modules of the machine
+	1. Screen
+	2. Keypad
+	3. Card reader
+	4. Printer
+	5. Cash dispenser
+	6. Deposit slot for check/cash
+	7. Camera
+	8. audio ouput for customer with disability
+	9. network module
+	10. backup power module
+
+User cases - 
+	Customers - 
+		1. Users login with card and PIN
+		2. Users can query balance
+		3. can transfer within their accounts
+		4. can withdraw
+		5. can deposite cash or check
+	Operator -
+		1. Turn on/off
+		2. Refill ATM with cash, receipt, ink
+		3. Take out deposited cash 
+	Admin - 
+		1. Admin can have operator level access
+		2. Can see logs
+		3. generate reports for deposites or cash withdraws.
+
+
+Classes -----------------
+
+public enum CustomerStatus {}
+public class Address {}
+public class Customer {}
+-------
+public class Account {}
+public class SavingAccount extends Account {}
+public class CheckingAccount extendes Account {}
+-------
+public class Screen {}
+public class KeyPad {}
+public class Printer {}
+public class CashDispencer {}
+public class DepositSlot {}
+public class CheckDepositSlot extends DepositSlot {}
+public class CashDepositSlot extends DepositSlot {}
+public class NetworkManagement {}
+public class PowerManagement {}
+public class Bank {}
+public class ATM {}
+-------
+public enum TransactionType {}
+public enum TransactionStatus {}
+public class Transaction {
+	private Long transactionId;
+	private Date transactionDate;
+	private TransactionStatus status;
+	private Double amount;
+}
+public class BalanceInquiry extends Transaction {
+	private Long accountId;
+}
+public class Transfer extends Transaction {
+	private Long fromAccountId;
+	private Long toAccountId;
+}
+public class Withdraw extends Transaction {
+	private Long accountId;
+	private Long limit;
+}
+public class Deposit extends Transaction {
+	private Long accountId;
+}
+public class CashDeposit extends Deposit {
+	private Long limit;
+}
+public class CheckDeposit extends Deposit {
+	private String checkNumber;
+	private String banckCode;
+}
