@@ -1,0 +1,24 @@
+AlgoToLearn
+
+
+To Learn
+
+1. asymptotic_analysis
+	https://www.tutorialspoint.com/data_structures_algorithms/asymptotic_analysis.htm
+
+2. Bloom filter
+
+3. count min sketch top k
+	https://www.youtube.com/watch?v=kx-XDoPjoHw
+	http://web.stanford.edu/class/cs369g/files/lectures/lec7.pdf
+	https://zpjiang.me/2017/11/13/top-k-elementes-system-design/
+	https://www.youtube.com/watch?v=ibxXO-b14j4
+4. KMP string matching
+5. Floyd cycle detection - super cool
+
+
+6. LCS
+7. Edit Distance
+8. AVL tree
+9. HEAP
+10. find intersection of two lines

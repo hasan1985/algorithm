@@ -1,0 +1,115 @@
+Airline Management System
+
+SubSystems - 
+1. Flight reservation system - customers can reserve flight
+2. Flight Scheduling system - Offcials can assign flights to source and destinations
+
+Requirements flight reservation system - 
+1. Customer requirements - 
+	1. Customer should be able to search flights with filters - 
+		1. Destination
+		2. Source
+		3. Dates or hours
+		4. Class - economy/business/1st
+	2. Can reserve tickets for multiple flights for multiple passengers
+	3. Can see flight details time available seats.
+	4. Can pick seats while reserving.
+	5. Can cancel reserved flight.
+	6. Complete payments with credit card.
+	7. Should get notification via text/email about reservation and flight update
+	8. Customer should be able to sign-up/sign-in to a profile or be a guest.
+2. Admin requirements - 
+	1. Admin can do anything a customer can do
+	2. Can perform refund for canceled reservation
+	3. Can add remove reschedule flights.
+
+Requirements for flight Scheduling system
+1. Admin can create/update/cancel flight instance.
+2. Can assign a flight to source and destination.
+
+classes - 
+1. enums and constants
+public enum FlightStatus {
+	SCHEDULED,
+	DELAYED,
+	CANCELLED,
+	DEPARTED,
+	ARRIVED,
+	LANDED,
+	IN-AIR,
+	DIVERTED,
+	UNKNOWN
+}
+public enum PaymentStatus {
+	UNPAID,
+	FILLED,
+	PENDING,
+	COMPLETED,
+	DECLINED,
+	REFUNDED
+}
+public enum ReservationStatus {
+	REQUESTED,
+	PENDING,
+	CONFIRMED,
+	CANCELLED,
+	CHECKED-IN,
+	ABANDONED
+}
+public enum SeatClass {
+	ECONOMY,
+	BUSINESS,
+	FIRST-CLASS,
+	DISABLE
+}
+public enum AccountStatus {
+	ACTIVE,
+	CANCELED,
+	BLOCKED
+}
+
+2. Classes -
+// ----------- User related classes
+public class Address {}
+public class Account {
+	private String id;
+	private String passwordHash;
+	private AccountStatus accountStatus;
+}
+public abstract class Person {
+	private String name;
+	private Address address;
+	private String email;
+	private String phone;
+}
+public class Customer extends Person {
+	private String customerId;
+	private String frequentFlyerNumber;
+
+	private List<Itenerary> getIteneraries();
+}
+public class Passenger extends Person {
+	private String passportNumber;
+	private String driveLisenceNumber;
+}
+
+// 
+public class Airport {
+	private String name;
+	private Address address;
+	private String airportCode;
+
+	private List<Flight> getFlights();
+}
+public class Aircraft {
+	private String aircraftNumber;
+	private String model;
+	private Date manufacturingDate;
+
+	public List<Seat> getSeats;
+	public SeatLayout getSeatLayout();
+	public List<FlightInstance> getFlighInstances();
+}
+
+// to be continue ...
+
